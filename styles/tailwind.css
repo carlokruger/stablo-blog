@@ -16,3 +16,36 @@
     width: 100%;
     height: auto;
   }
+
+  .bg-centered-text {
+    text-align: center;
+  }
+
+  .bgnew-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-bgnew-container {
+    position: relative;
+  }
+  
+  .text-bgnew-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+ /*  .custom-bg-image {
+    background-size: 100% auto;
+    height: 1092px;
+  } */
+  .custom-bg-image {
+    width: 100vw;
+    height: 1092px;
+    background-size: cover;
+    background-position: center;
+  }
