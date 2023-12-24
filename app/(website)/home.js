@@ -6,9 +6,8 @@ export default function Post({ posts }) {
   return (
     <>
       {posts && (
-        <Container>
-  
-
+        <Container className="container">
+          <img src="/img/background.jpeg" alt="Background" />
         </Container>
       )}
     </>

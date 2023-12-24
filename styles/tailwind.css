@@ -7,3 +7,12 @@
 /*! purgecss end ignore */
 
 /*Custom Styles Here*/
+
+.bg-container {
+    width: 100%;
+  }
+  
+  .bg-container img {
+    width: 100%;
+    height: auto;
+  }
