@@ -82,34 +82,22 @@ export default function NavbarAlt(props) {
             <>
               <div className="flex flex-wrap justify-between md:gap-10 lg:flex-nowrap">
                 <div className="flex w-full items-center justify-between lg:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
-                    {props.logo ? (
-                      <Image
-                        src={urlForImage(props.logo)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                        carlo
-                      </span>
-                    )}
-                  </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
-                    {props.logoalt ? (
-                      <Image
-                        src={urlForImage(props.logoalt)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                        carlo
-                      </span>
-                    )}
-                  </Link>
+                <Link href="/" className="w-28 dark:hidden">
+  <img
+    src="/img/carlokruger-high-resolution-logo-white.svg"
+    alt="carlo"
+    loading="eager"
+    className="w-full"
+  />
+</Link>
+<Link href="/" className="hidden w-28 dark:block">
+  <img
+    src="/img/carlokruger-high-resolution-logo-white.svg"
+    alt="carlo"
+    loading="eager"
+    className="w-full"
+  />
+</Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
                     className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 lg:hidden ">
