@@ -6,13 +6,13 @@ import Navbar from "@/components/navbar";
 async function sharedMetaData(params) {
   const settings = await getSettings();
 
-  return {
+  /* return {
     // enable this for resolving opengraph image
     // metadataBase: new URL(settings.url),
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
+        "",
       template: "%s | Stablo"
     },
     description:
@@ -40,7 +40,7 @@ async function sharedMetaData(params) {
       index: true,
       follow: true
     }
-  };
+  }; */
 }
 
 export async function generateMetadata({ params }) {
