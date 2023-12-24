@@ -53,7 +53,7 @@ export default function Footer(props) {
             />
           </a>
         </div>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
       </div>
       <Backlink />
     </Container>
