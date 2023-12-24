@@ -12,36 +12,37 @@ import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
   const leftmenu = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "About",
-      href: "/about"
-    },
-    {
-      label: "Contact",
-      href: "/contact"
-    }
+    
   ];
 
   const rightmenu = [
+   /*  {
+      label: "Home",
+      href: "/"
+    }, */
+ /*    {
+      label: "About",
+      href: "/about"
+    }, */
     {
-      label: "Archive",
-      href: "/archive"
+      label: "contact",
+      href: "/contact"
     },
     {
+      label: "thoughts",
+      href: "/archive"
+    },
+/*     {
       label: "Pro Version",
       href: "https://stablo-pro.web3templates.com/",
       external: true,
       badge: "new"
-    },
-    {
+    }, */
+/*     {
       label: "Download",
       href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
       external: true
-    }
+    } */
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];

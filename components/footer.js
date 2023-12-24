@@ -86,7 +86,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span> Purchase Pro ↗</span>
+      {/* <span> Purchase Pro ↗</span> */}
     </a>
   );
 };
