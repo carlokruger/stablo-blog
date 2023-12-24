@@ -46,6 +46,14 @@
   .custom-bg-image {
     width: 100vw;
     height: 1092px;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
+  }
+
+  .full-width-container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
