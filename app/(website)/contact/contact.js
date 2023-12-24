@@ -13,7 +13,7 @@ export default function Contact({ settings }) {
   return (
     <div>
 
-      <iframe src="/img/iframe.html" title="Embedded Content" width="100%" height="500px"></iframe>
+      <iframe src="/img/iframe.html" title="Embedded Content" width="100%" height="700px"></iframe>
       
       <div>
         
