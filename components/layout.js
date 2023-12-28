@@ -23,7 +23,7 @@ export default function Layout(props) {
         title={props.title}
         description={props.description}
         canonical={props.url}
-        openGraph={{
+        /* openGraph={{
           url: props.url,
           title: props.title,
           description: props.description,
@@ -41,7 +41,7 @@ export default function Layout(props) {
           handle: "@surjithctly",
           site: "@surjithctly",
           cardType: "summary_large_image"
-        }}
+        }} */
       />
 
       <div
