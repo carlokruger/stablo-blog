@@ -165,25 +165,53 @@
 
     <style>
       .link {
-        width: 200px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        background-color: transparent;
+        color: var(--accentColor);
+        border: solid var(--accentColor) 2px;
+        border-radius: 10px;
+        font-size: 1rem;
+        text-align: center;
+        width: 200px;
+      }
+    
+      .link img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+    
+      .link span {
+        margin-left: 10px;
       }
     </style>
     
-    <div id="links" style="max-width: 250px; width: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 27px auto;">
-      <a class="link" href="https://github.com/carlokruger" target="_blank" style="position: relative; background-color: transparent; color: var(--accentColor); border: solid var(--accentColor) 2px; border-radius: 10px; font-size: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; margin: 10px; padding: 10px; text-decoration: none;">
-        <img src="/img/github-mark-white.svg" alt="github" style="width: 25px; height: 25px; margin-right: 10px;">github
+    <div id="links" style="max-width: 250px; width: 200px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin: 27px auto;">
+      <a class="link" href="https://github.com/carlokruger" target="_blank">
+        <img src="/img/github-mark-white.svg" alt="github">
+        <span>github</span>
       </a>
-      <a class="link" href="https://www.linkedin.com/in/carlokruger/" target="_blank" style="position: relative; background-color: transparent; color: var(--accentColor); border: solid var(--accentColor) 2px; border-radius: 10px; font-size: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; margin: 10px; padding: 10px; text-decoration: none;">
-        <img src="/img/linkedin-white.png" alt="linkedin" style="width: 25px; height: 25px; margin-right: 10px;">linkedin
+      <a class="link" href="https://www.linkedin.com/in/carlokruger/" target="_blank">
+        <img src="/img/linkedin-white.png" alt="linkedin">
+        <span>linkedin</span>
       </a>
-      <a class="link" href="https://www.facebook.com/theothercarlokruger" target="_blank" style="position: relative; background-color: transparent; color: var(--accentColor); border: solid var(--accentColor) 2px; border-radius: 10px; font-size: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; margin: 10px; padding: 10px; text-decoration: none;">
-        <img src="/img/zuckbook.png" alt="zuckbook" style="width: 25px; height: 25px; margin-right: 10px;">zuckbook
+      <a class="link" href="https://www.facebook.com/theothercarlokruger" target="_blank">
+        <img src="/img/zuckbook.png" alt="zuckbook">
+        <span>zuckbook</span>
       </a>
-      <a class="link" href="https://www.instagram.com/ironicbuddha/" target="_blank" style="position: relative; background-color: transparent; color: var(--accentColor); border: solid var(--accentColor) 2px; border-radius: 10px; font-size: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; margin: 10px; padding: 10px; text-decoration: none;">
-        <img src="/img/insta.png" alt="instagram" style="width: 25px; height: 25px; margin-right: 10px;">instagram
+      <a class="link" href="https://www.instagram.com/ironicbuddha/" target="_blank">
+        <img src="/img/insta.png" alt="instagram">
+        <span>instagram</span>
       </a>
-      <a class="link" href="https://twitter.com/ironicbuddha" target="_blank" style="position: relative; background-color: transparent; color: var(--accentColor); border: solid var(--accentColor) 2px; border-radius: 10px; font-size: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; margin: 10px; padding: 10px; text-decoration: none;">
-        <img src="/img/elontwit.png" alt="elontwit" style="width: 25px; height: 25px; margin-right: 10px;">twitter
+      <a class="link" href="https://twitter.com/ironicbuddha" target="_blank">
+        <img src="/img/elontwit.png" alt="elontwit">
+        <span>twitter</span>
       </a>
     </div>
   </div>
