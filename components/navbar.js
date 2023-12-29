@@ -80,7 +80,7 @@ export default function Navbar(props) {
                 <Link href="/" className="w-28 dark:hidden">
   <img
     src="/img/carlokruger-high-resolution-logo-white.svg"
-    alt="carlo"
+    alt="carlo kruger"
     loading="eager"
     className="w-full"
   />
@@ -88,7 +88,7 @@ export default function Navbar(props) {
 <Link href="/" className="hidden w-28 dark:block">
   <img
     src="/img/carlokruger-high-resolution-logo-white.svg"
-    alt="carlo"
+    alt="carlo kruger"
     loading="eager"
     className="w-full"
   />
