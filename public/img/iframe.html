@@ -168,57 +168,78 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 10px;
-        padding: 10px;
-        text-decoration: none;
-        position: relative;
+        width: 220px;
+        min-height: 48px;
+        margin: 10px auto;
+        padding: 0 16px;
         background-color: transparent;
         color: var(--accentColor);
         border: solid var(--accentColor) 2px;
         border-radius: 10px;
         font-size: 1rem;
         text-align: center;
-        width: 200px;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        box-sizing: border-box;
       }
-    
+
       .link img {
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        margin-right: 16px;
+        flex-shrink: 0;
       }
-    
+
       .link span {
-        margin-left: 10px;
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .link:hover, .link:active {
+        background-color: var(--accentColor);
+        color: var(--bgColor);
+      }
+
+      #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 27px auto;
+        width: 100%;
+        max-width: 250px;
       }
     </style>
     
-    <div id="links" style="max-width: 250px; width: 200px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin: 27px auto;">
+    <div id="links">
       <a class="link" href="https://github.com/carlokruger" target="_blank">
-        <img src="/img/github-mark-white.svg" alt="github">
+        <img src="github-mark-white.svg" alt="github">
         <span>github</span>
       </a>
       <a class="link" href="https://www.linkedin.com/in/carlokruger/" target="_blank">
-        <img src="/img/linkedin-white.png" alt="linkedin">
+        <img src="linkedin-white.png" alt="linkedin">
         <span>linkedin</span>
       </a>
       <a class="link" href="https://www.facebook.com/theothercarlokruger" target="_blank">
-        <img src="/img/zuckbook.png" alt="zuckbook">
+        <img src="zuckbook.png" alt="zuckbook">
         <span>zuckbook</span>
       </a>
       <a class="link" href="https://www.instagram.com/ironicbuddha/" target="_blank">
-        <img src="/img/insta.png" alt="instagram">
+        <img src="insta.png" alt="instagram">
         <span>instagram</span>
       </a>
       <a class="link" href="https://twitter.com/ironicbuddha" target="_blank">
-        <img src="/img/elontwit.png" alt="elontwit">
+        <img src="elontwit.png" alt="elontwit">
         <span>elontwit</span>
       </a>
       <a class="link" href="https://ohai.social/@ironicbuddha" target="_blank">
-        <img src="/img/mastodon.png" alt="zuckbook">
+        <img src="mastodon.png" alt="mastodon">
         <span>mastodon</span>
       </a>
       <a class="link" href="mailto:carlo@carlokruger.com" target="_blank">
-        <img src="/img/email.png" alt="email">
+        <img src="email.png" alt="email">
         <span>email</span>
       </a>
     </div>
