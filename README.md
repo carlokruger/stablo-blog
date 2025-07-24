@@ -108,11 +108,9 @@ Now, you can open your code editor (if not already) we prefer VSCode. The run th
 npm install
 # or
 yarn install
-# or
-pnpm install
 ```
 
-We prefer `pnpm` to save your disk space.
+We prefer `npm` to save your disk space.
 
 ## Step 3: Import Demo Data (Optional)
 
@@ -122,8 +120,6 @@ To look like what you have seen in the demo, with all the content and images, fo
 
 ```bash
 npm install -g @sanity/cli
-# or
-pnpm install -g @sanity/cli
 ```
 
 Then login to sanity using `sanity login` command
@@ -136,8 +132,6 @@ Now, you will be able to import demo content by running the `sanity-import` comm
 
 ```bash
 npm run sanity-import
-# or
-pnpm sanity-import
 ```
 
 ## Step 4: Finish it up!
@@ -146,8 +140,6 @@ Now, run your project using the below command.
 
 ```bash
 npm run dev
-# or
-pnpm dev
 ```
 
 Now your project should be up and the Next.js frontend will be running on http://localhost:3000.
@@ -156,8 +148,6 @@ Sanity Studio can be accessed using http://localhost:3000/studio or you can run 
 
 ```bash
 npm run sanity
-# or
-pnpm sanity
 ```
 
 ## Step 5. Redploy
