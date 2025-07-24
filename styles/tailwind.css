@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*! purgecss start ignore */
-@import "prism.css";
+@import "./prism.css";
 /*! purgecss end ignore */
 
 /*Custom Styles Here*/

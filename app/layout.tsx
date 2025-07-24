@@ -3,6 +3,8 @@ import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
 
+console.log("Rendering app/layout.tsx");
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter"
@@ -23,7 +25,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="antialiased text-gray-800 dark:bg-black dark:text-gray-400">
+      <body className="antialiased text-gray-800 dark:text-gray-400">
         <Providers>{children}</Providers>
       </body>
     </html>

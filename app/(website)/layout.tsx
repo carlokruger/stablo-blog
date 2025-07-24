@@ -53,7 +53,10 @@ export default async function Layout({ children, params }) {
     <>
       <Navbar {...settings} />
 
-      <div>{children}</div>
+      <div className="border-4 border-blue-500">
+        <div className="text-blue-500 font-bold">Website Layout Debug Marker</div>
+        {children}
+      </div>
 
       <Footer {...settings} />
     </>

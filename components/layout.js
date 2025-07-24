@@ -11,6 +11,7 @@ import Footer from "@/components/footer";
 // import PopupWidget from "../components/popupWidget";
 
 export default function Layout(props) {
+  console.log("Rendering components/layout.js");
   const { children } = props;
   const ogimage = urlForImage(props?.openGraphImage) ?? "";
   return (

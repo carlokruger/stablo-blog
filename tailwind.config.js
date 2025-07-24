@@ -11,7 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral
+        gray: colors.neutral,
+        fuchsia: colors.fuchsia,
+        rose: colors.rose,
+        sky: colors.sky,
+        emerald: colors.emerald,
+        blue: colors.blue,
+        cyan: colors.cyan,
+        slate: colors.slate,
       },
       fontFamily: {
         // to change, update font in _document.js
@@ -26,9 +33,6 @@ module.exports = {
         "9/16": "9 / 16"
       }
     }
-  },
-  variants: {
-    extend: {}
   },
   plugins: [require("@tailwindcss/typography")]
 };

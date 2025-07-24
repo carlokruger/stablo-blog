@@ -7,24 +7,21 @@ const Home = () => {
   const backgroundImage = '/img/background.jpeg';
 
   return (
-<Container className="full-width-container">
-  {backgroundImage && (
-   <div
-   className="custom-bg-image ml-0"
-   style={{
-     backgroundImage: `url(${backgroundImage})`,
-     backgroundRepeat: "no-repeat"
-   }}
- >
-      <div className="text-white text-center pt-32">
-        <h1 className="text-4xl font-bold mb-4">carlo kruger</h1>
-        <p className="text-lg">
-          this is my space
-        </p>
+    <section
+      className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center bg-black overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">carlo kruger</h1>
+        <p className="text-lg md:text-xl text-white/90">this is my space</p>
       </div>
-    </div>
-  )}
-</Container>
+    </section>
   );
 };
 

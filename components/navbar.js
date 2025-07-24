@@ -10,171 +10,30 @@ import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
 
-export default function Navbar(props) {
-  const leftmenu = [
-    
-  ];
-
-  const rightmenu = [
-   /*  {
-      label: "Home",
-      href: "/"
-    }, */
- /*    {
-      label: "About",
-      href: "/about"
-    }, */
-    {
-      label: "contact",
-      href: "/contact"
-    },
-    {
-      label: "thoughts",
-      href: "/archive"
-    },
-/*     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    }, */
-/*     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    } */
-  ];
-
-  const mobilemenu = [...leftmenu, ...rightmenu];
-
+export default function Navbar() {
   return (
-    <Container>
-      <nav>
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
-                  {leftmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          {item.label}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
-                </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
-                <Link href="/" className="w-28 dark:hidden">
-  <img
-    src="/img/carlokruger-high-resolution-logo-white.svg"
-    alt="carlo kruger"
-    loading="eager"
-    className="w-full"
-  />
-</Link>
-<Link href="/" className="hidden w-28 dark:block">
-  <img
-    src="/img/carlokruger-high-resolution-logo-white.svg"
-    alt="carlo kruger"
-    loading="eager"
-    className="w-full"
-  />
-</Link>
-                  <Disclosure.Button
-                    aria-label="Toggle Menu"
-                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
-                    <svg
-                      className="h-6 w-6 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24">
-                      {open && (
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                        />
-                      )}
-                      {!open && (
-                        <path
-                          fillRule="evenodd"
-                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                        />
-                      )}
-                    </svg>
-                  </Disclosure.Button>
-                </div>
-
-                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
-                  {rightmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          <span> {item.label}</span>
-                          {item.badge && (
-                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
-                              {item.badge}
-                            </span>
-                          )}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
-                </div>
-              </div>
-              <Disclosure.Panel>
-                <div className="order-2 -ml-4 mt-4 flex w-full flex-col items-center justify-start md:hidden">
-                  {mobilemenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                          mobile={true}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="w-full px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          {item.label}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
-                </div>
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-      </nav>
-    </Container>
+    <nav style={{ border: '4px solid red', background: 'white', width: '100vw' }}>
+      <div className="text-red-500 font-bold">Navbar Debug Marker</div>
+      <div className="flex flex-row items-center w-full px-8 py-8">
+        {/* Left spacer for centering */}
+        <div className="flex-1" />
+        {/* Centered logo */}
+        <div className="flex-1 flex justify-center">
+          <a className="w-24 h-24 flex items-center justify-center" href="/">
+            <img src="/img/carlokruger-high-resolution-logo-white.svg" alt="carlo kruger" loading="eager" width="100" height="100" className="w-[100px] h-[100px] object-contain" />
+          </a>
+        </div>
+        {/* Nav links right */}
+        <div className="flex-1 flex justify-end items-center space-x-8">
+          <Link href="/contact" className="text-sm font-medium text-gray-400 hover:text-white">
+            contact
+          </Link>
+          <Link href="/archive" className="text-sm font-medium text-gray-400 hover:text-white">
+            thoughts
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
 }
 
