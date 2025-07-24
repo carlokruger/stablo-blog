@@ -48,8 +48,9 @@ export default function Footer(props) {
               src={VercelLogo}
               alt="Powered by Vercel"
               unoptimized={true}
-              width="150"
-              height="25"
+              width={150}
+              height={25}
+              style={{ height: '25px', width: 'auto' }}
             />
           </a>
         </div>
